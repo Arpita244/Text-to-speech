@@ -1,0 +1,260 @@
+/* General App Styles */
+.app-container {
+  font-family: 'Poppins', Arial, sans-serif;
+  padding: 30px;
+  max-width: 650px;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.app-container.light {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  color: #333;
+}
+
+.app-container.dark {
+  background: linear-gradient(145deg, #1c1c1c, #282828);
+  color: #e0e0e0;
+  transform: scale(1.02);
+}
+
+/* Header Styles */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.app-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(246, 79, 89, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(246, 79, 89, 0.8);
+}
+
+/* Text Input Styles */
+.text-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input:focus {
+  border-color: #00bcd4;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+}
+
+/* Controls Styles */
+.controls {
+  display: grid;
+  gap: 20px; /* Increased gap to ensure better spacing */
+  grid-template-columns: 1fr 1fr; /* Ensures two columns layout for better alignment */
+  margin-bottom: 25px;
+  align-items: center; /* Aligns items vertically */
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column; /* Ensures label and input stack vertically */
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  text-align: left; /* Left-aligns text for better readability */
+}
+
+.voice-select {
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.slider {
+  margin-top: 5px;
+  width: 100%; /* Ensures the slider takes up full width */
+  cursor: pointer;
+}
+
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.speak-btn {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: white;
+}
+
+.speak-btn:hover {
+  background: linear-gradient(90deg, #388e3c, #66bb6a);
+}
+
+.stop-btn {
+  background: linear-gradient(90deg, #f44336, #ef5350);
+  color: white;
+}
+
+.stop-btn:hover {
+  background: linear-gradient(90deg, #d32f2f, #e57373);
+}
+
+.pause-resume-btn {
+  background: linear-gradient(90deg, #ffa726, #fb8c00);
+  color: white;
+}
+
+.pause-resume-btn:hover {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+}
+
+.clear-btn {
+  background: linear-gradient(90deg, #9e9e9e, #bdbdbd);
+  color: white;
+}
+
+.clear-btn:hover {
+  background: linear-gradient(90deg, #757575, #9e9e9e);
+}
+
+/* History Section */
+.history-section {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+.app-footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #aaa;
+  font-weight: bold;
+  animation: fade-in 2s ease-in-out;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .text-input {
+    font-size: 16px;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
